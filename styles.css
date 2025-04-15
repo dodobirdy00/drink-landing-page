@@ -16,6 +16,7 @@ body{
     align-items: center;
     margin-top: 5px;
     position: relative;
+    animation: slideInFromTop 1s ease-in-out;
 }
 
 .nav-bar img{
@@ -78,6 +79,8 @@ body{
 .text h1{
     font-size: 3rem;
     margin-bottom: 10px;
+    text-shadow: 0 0 3px #F16767;
+    animation: slideInFromBottom 2s ease-in-out 1s backwards;
 
 }
 
@@ -93,6 +96,7 @@ body{
 
 .text-left p{
     margin-bottom: 30px;
+    animation: slideInFromBottom 2s ease-in-out 2s backwards;
 }
 
 .text-left .btn{
@@ -104,6 +108,9 @@ body{
     font-weight: 700;
     font-size: x-large;
     color: #FFF085;
+    animation: slideInFromBottom 2s ease-in-out 1s backwards;
+
+    box-shadow: 2px 2px 1px #F16767;
 }
 .text-left .btn:hover{
     box-shadow: 0 0 20px  #FF9B17;
@@ -112,6 +119,8 @@ body{
 
 .text-right .drink-toggle img{
     filter: drop-shadow(63px 90px 150px rgb(214, 133, 11));
+    transition: transform 2s ease-in-out 4s backwards;
+    animation: slideInFromRight 2s ease;
 }
 
 
@@ -137,7 +146,10 @@ body{
 
     position: relative;
     z-index: 2; 
+    box-shadow: 1px 1px 2px #F16767;
     /* the text container will cover the img if we don't use z-index */
+
+    animation: slideInFromBottom 2s ease-in-out 3s backwards;
 }
 
 .drink img:hover{
@@ -186,3 +198,37 @@ body{
 }
 
 
+/* Animation */
+
+@keyframes slideInFromTop {
+    from {
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromRight {
+    from {
+        opacity: 0;
+        transform: translatex(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translatez(0);
+    }
+}
+
+@keyframes slideInFromBottom {
+    from {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
