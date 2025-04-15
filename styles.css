@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+body{
+    color:#F16767;
+    background-color: #FFF085;
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.nav-bar img{
+    width: 40px;
+}
+
+.center-nav a,
+.social a{
+    color: #FF9B17;
+    font-size: 1.5rem;
+    margin-left: 10px;
+} 
+
+.center-nav a:first-child{
+    color: #F16767;
+}
+
+
+
+/* Text section */
+
+.text{
+    display: flex;
+    position: relative;
+    top: 100px;
+    left: 180px;
+    letter-spacing: 1px;
+}
+.text h1{
+    font-size: 3rem;
+    margin-bottom: 10px;
+
+}
+
+.text-left{
+    width: 50%;
+    padding-top: 50px;
+}
+
+.text-right img{
+    width: 25rem;
+    margin-left: 4rem;
+}
+
+.text-left p{
+    margin-bottom: 30px;
+}
+
+.text-left .btn{
+    margin-right: 20px;
+    border: 2px solid #FFF085;
+    background-color: #FF9B17;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+
+/* drink images */
+
