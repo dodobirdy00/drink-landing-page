@@ -155,6 +155,7 @@ body{
 .drink img:hover{
     transform: scale(1.1);
     box-shadow: 0 0 30px #FF9B17;
+    cursor: pointer;
 }
 
 
