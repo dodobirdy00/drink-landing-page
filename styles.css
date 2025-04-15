@@ -175,6 +175,7 @@ body{
     justify-content: space-between;
     padding: 30px;
     border-radius: 20px;
+    box-shadow: 2px 2px  2px #FFF085;
 
 }
 
@@ -191,6 +192,10 @@ body{
     font-weight: 700;
     font-size: x-large;
     color:  #FFF085;
+
+    box-shadow: 2px 2px 1px #F16767;
+
+    
 }
 .contact-box .btn:hover{
     box-shadow: 0 0 20px  #FF9B17;
