@@ -7,6 +7,7 @@
 body{
     color:#F16767;
     background-color: #FFF085;
+    width: 100%;
 }
 
 .nav-bar{
@@ -14,15 +15,17 @@ body{
     justify-content: space-around;
     align-items: center;
     margin-top: 5px;
+    position: relative;
 }
 
 .nav-bar img{
     width: 40px;
+
+  
 }
 
-.center-nav a,
-.social a{
-    color: #FF9B17;
+.nav-bar a{
+    color: #FCB454;
     font-size: 1.5rem;
     margin-left: 10px;
 } 
@@ -30,6 +33,36 @@ body{
 .center-nav a:first-child{
     color: #F16767;
 }
+
+.center-nav a,
+.social a:hover{
+    color: #F16767;
+    text-shadow: 0 0 30px #F16767;
+    transition: all 0.3s ease-in-out;
+}
+.nav-bar .center-nav a{
+    position: relative;
+}
+
+
+.nav-bar .center-nav a::before{
+    content: "";
+    position: absolute;
+    width:  100%;
+    height: 2px;
+    bottom: 0px;
+ 
+    background-color: rgb(255,140,0);
+    /* visibility: hidden; */
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-bar .center-nav a:hover::before{
+    transform: scaleX(1);
+}
+
+
 
 
 
@@ -39,7 +72,7 @@ body{
     display: flex;
     position: relative;
     top: 100px;
-    left: 180px;
+    justify-content: center;
     letter-spacing: 1px;
 }
 .text h1{
@@ -68,8 +101,88 @@ body{
     background-color: #FF9B17;
     padding: 10px;
     border-radius: 15px;
+    font-weight: 700;
+    font-size: x-large;
+    color: #FFF085;
+}
+.text-left .btn:hover{
+    box-shadow: 0 0 20px  #FF9B17;
+    transition: all 0.3s ease-in-out;
+}
+
+.text-right .drink-toggle img{
+    filter: drop-shadow(63px 90px 150px rgb(214, 133, 11));
 }
 
 
+
 /* drink images */
+.drink{
+    margin-bottom: 40px;
+    display: flex;
+}
+
+
+.drink img:first-child{
+    margin-left: 145px;
+}
+.drink img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 1px solid #FF9B17;
+    background-color: #FCB454;
+    margin-right: 15px;
+    transition: transform 0.6s ease;
+
+    position: relative;
+    z-index: 2; 
+    /* the text container will cover the img if we don't use z-index */
+}
+
+.drink img:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 30px #FF9B17;
+}
+
+
+/* contact box */
+
+.contact{
+    background-color: #FCB454;
+    padding: 100px;
+
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+}
+
+.contact-box{
+    display: flex;
+    background-color: #FFF085;
+    justify-content: space-between;
+    padding: 30px;
+    border-radius: 20px;
+
+}
+
+.contact-box h2{
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.contact-box .btn{
+    border: 2px solid #FFF085;
+    background-color: #FF9B17;
+    padding: 10px;
+    border-radius: 15px;
+    font-weight: 700;
+    font-size: x-large;
+    color:  #FFF085;
+}
+.contact-box .btn:hover{
+    box-shadow: 0 0 20px  #FF9B17;
+    transition: all 0.3s ease-in-out;
+}
+
 
