@@ -206,7 +206,7 @@ body{
 
 /* Animation */
 
-@keyframes slideInFromTop {
+/* @keyframes slideInFromTop {
     from {
         transform: translateY(-50%);
         opacity: 0;
@@ -237,4 +237,86 @@ body{
         opacity: 1;
         transform: translateY(0);
     }
+} */
+
+
+/* responsive web using media query */
+
+
+
+/* for small phones */
+@media (max-width: 480px){
+
+    
+        .text{
+            flex-direction: column;
+    
+        }
+        .text-left{
+            width: 100%;
+            padding: 20px;
+        }
+
+        .text-left p{
+            width: 90%;
+            margin-bottom: 30px;
+        }
+        .text-right img{
+            width: 10rem;
+            margin-top: 3rem;
+            margin-left: 8rem;
+        }
+        .drink{
+            margin-top: 10rem;
+        }
+        .contact{
+            padding: 50px;
+        }
+    
+        .contact-box .btn{
+            text-align: center;
+        }
+    
+
+
+
 }
+
+/* for tablet */
+@media (min-width: 481px) and (max-width:600px){
+body{
+    background-color: rgb(63, 41, 41);
+}
+
+    .text{
+        flex-direction: column;
+
+    }
+    .text-left{
+        width: 100%;
+        padding: 20px;
+    }
+
+    .text-left p{
+        width: 90%;
+        margin-bottom: 30px;
+    }
+    .text-right img{
+        width: 20rem;
+        margin-top: 3rem;
+        margin-left: 8rem;
+    }
+    .drink{
+        margin-top: 10rem;
+        justify-items: center;
+    }
+    .contact{
+        padding: 50px;
+    }
+
+    .contact-box .btn{
+        text-align: center;
+    }
+
+}
+
