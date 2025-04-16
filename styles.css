@@ -269,6 +269,9 @@ body{
         .drink{
             margin-top: 10rem;
         }
+        .drink img:first-child{
+            margin-left: 30px;
+        }
         .contact{
             padding: 50px;
         }
@@ -277,6 +280,12 @@ body{
             text-align: center;
         }
     
+        .nav-bar a{
+            color: #FCB454;
+            font-size: 1rem;
+            margin-left: 10px;
+        } 
+        
 
 
 
@@ -306,9 +315,12 @@ body{
         margin-top: 3rem;
         margin-left: 8rem;
     }
+    .drink img:first-child{
+        margin-left: 80px;
+    }
     .drink{
         margin-top: 10rem;
-        justify-items: center;
+        justify-content:space-between;
     }
     .contact{
         padding: 50px;
